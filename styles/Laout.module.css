@@ -13,7 +13,7 @@
   font-size: 1.25rem;
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -55,7 +55,7 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-}
+} */
 
 .code {
   background: #fafafa;
