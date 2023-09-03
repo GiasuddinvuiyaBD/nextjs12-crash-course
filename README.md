@@ -118,3 +118,18 @@ export default function Document() {
 
     - <Html>, <Head />, <Main /> and <NextScript /> are required for the page to be properly rendered.
 ```
+
+## Data fetching in next
+For fetching data in nextJS. We have to fetch our main file i mean index.js file. 
+we can fetch data above the index.js file or below the index.js file. 
+
+For fetching data in nextjs we can use three seperate method.
+1. getStaticProps which is gonne fetch it build time
+2. getServerSideProps it will allow is to fatch data every request which will be slower.
+3. getStaticPast to dynamically generate past bese on data were fetching. 
+
+
+
+
+
+
