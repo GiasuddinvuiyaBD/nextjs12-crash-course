@@ -61,3 +61,11 @@ Next.js allowes the first page load to be rendered by the server, which is great
 2. Style Folder. There are so many different way to write css. we can see globals.css this file we can use anywere of our application. Another file is specific css. Home.module.css it means this is a specific css for Home page. When we need to write css for any specific file or component in that time we can use Componentname.module.css
 
 3. pages folder. index.js is four main file
+
+### Routting system
+> One of the best thing about nextjs is routing system.
+> We don't need third pary router.
+> if we want to make router just we can pust the file inside the pages folder. 
+> basically inside the pages folder we need to make router of our applications.
+> new i will be a about.js page router
+
