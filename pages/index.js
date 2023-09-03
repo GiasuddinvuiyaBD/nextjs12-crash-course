@@ -1,7 +1,7 @@
 import Head from "next/head"
 
-
-export default function Home() {
+export default function Home({articals}) {
+  console.log(articals)
   return (
     <div>
         <Head>
@@ -12,3 +12,17 @@ export default function Home() {
     </div>
   )
 }
+
+// we will fetch data below of the main page. 
+export  const getStaticProps = async () => {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const articals = await res.json();
+
+  return{
+    props : {
+      articals
+    }
+  }
+}
+
+

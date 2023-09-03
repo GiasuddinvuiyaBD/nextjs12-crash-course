@@ -130,6 +130,10 @@ For fetching data in nextjs we can use three seperate method.
 
 
 
+## getStaticProps
+using getStaticProps we are getting data 
+
+
 
 
 
