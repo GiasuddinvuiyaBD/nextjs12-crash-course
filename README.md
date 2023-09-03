@@ -73,6 +73,20 @@ Next.js allowes the first page load to be rendered by the server, which is great
 Now we are added some <Head> </Head> inside of it i have added title and meta tag. If we want to see the value of our specific page it's possible. But if i create any application with react-react-app or regular clined side application i am not gonne see the content into the source code or view page. Just we will be able to see the main or root file. Next js is very good for ESO.
 
 
+### convention
+1. Every latter should be lowercase for pages. 
+2. For Other component for files we have to use CameleCase convention. 
+
+
+## Layout & css Modules
+
+_app.js : If we want to share our design and content every pages. In that situation we can use that coponent inside the _app.js. inside the page we can use globel css.
+
+### Components
+1. Inside the component i will take a file call Layout.js
+2. I will change Home.module.css to Layout.module.css
+3. Modify the _app.js
+
 
 
 
