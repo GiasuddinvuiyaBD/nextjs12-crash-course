@@ -69,3 +69,10 @@ Next.js allowes the first page load to be rendered by the server, which is great
 > basically inside the pages folder we need to make router of our applications.
 > new i will be a about.js page router
 
+### view page source
+Now we are added some <Head> </Head> inside of it i have added title and meta tag. If we want to see the value of our specific page it's possible. But if i create any application with react-react-app or regular clined side application i am not gonne see the content into the source code or view page. Just we will be able to see the main or root file. Next js is very good for ESO.
+
+
+
+
+
