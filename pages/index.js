@@ -1,7 +1,7 @@
 import Head from "next/head"
+import Artical from "../components/Articale"
 
 export default function Home({articals}) {
-  console.log(articals)
   return (
     <div>
         <Head>
@@ -9,6 +9,7 @@ export default function Home({articals}) {
             <meta name="keywords" content="web development, programming" />
         </Head>
         <h2>Welcome to Next</h2>
+       <Artical articals={articals} />
     </div>
   )
 }

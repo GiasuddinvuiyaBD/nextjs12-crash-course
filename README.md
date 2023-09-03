@@ -134,6 +134,12 @@ For fetching data in nextjs we can use three seperate method.
 using getStaticProps we are getting data 
 
 
+## Showing data to the UI. 
+We have showed data to ui. For showing data to ui i have taken two component
+1. Articale
+2. ArticaleItem
+
+In articale we have taken data from index then we looped it. Ater that we passed the all data to the ArticaleItem. Inside the articaleItem we showed the data into UI. 
 
 
 
