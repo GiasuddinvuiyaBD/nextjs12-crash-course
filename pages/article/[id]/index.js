@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import articaleStyle from '../../../styles/Aritcale.module.css';
 import { server } from "../../../config";
+import Meta from "../../../components/Meta";
 
 function article({article})
 {
@@ -9,6 +10,7 @@ function article({article})
     
     return(
         <>
+            <Meta title={article.title} description={article.excerpt} />
            <div  className={articaleStyle.card}>
                 <h3>{article.id} {article.title}</h3>
                 <p>{article.body}</p>

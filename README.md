@@ -172,6 +172,10 @@ If we want to genderate dynamic static side. We have to use getStaticProps and g
 }
 ```
 
+## custom Meta component. 
+I will create a component call Meta and use it on the head of the component. 
+
+
 
 ## Export a static Web Side. 
 
