@@ -1,5 +1,6 @@
 import articalStyle from '../styles/Aritcale.module.css'
-import ArticaleItem from './ArticaleItem'
+import ArticaleItem from './ArticaleItem'; 
+
 function Artical({articals})
 {
     return(
@@ -7,11 +8,12 @@ function Artical({articals})
           {
             articals.map((artical) =>
             {
-                return <ArticaleItem  artical={artical} /> 
+                return <ArticaleItem key={artical.id}  artical={artical} /> 
             })
           }
         </div>
-    )
+    );
 }
-// <h3 className={articalStyle.card} key={artical.id}>{artical.id} {artical.title}</h3>
-export default Artical
+
+export default Artical;
+

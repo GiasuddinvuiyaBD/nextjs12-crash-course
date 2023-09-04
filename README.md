@@ -141,5 +141,9 @@ We have showed data to ui. For showing data to ui i have taken two component
 
 In articale we have taken data from index then we looped it. Ater that we passed the all data to the ArticaleItem. Inside the articaleItem we showed the data into UI. 
 
+## Routing 
+If we want to create a route with id 
+Example : articale/[id] index.js // this index.js file will be inside of the id folder.
+
 
 
