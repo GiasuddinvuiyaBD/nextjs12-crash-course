@@ -148,7 +148,28 @@ Example : articale/[id] index.js // this index.js file will be inside of the id 
 ## getServerSideProps
 getStaticProps fetch the data build time at build time but getServerSideProps fetch the data at the time of request. getServerSideProps and getStaticProps resive a context. 
 
+## getStaticPaths()
+It's use for generate data dynamically. We can also combinate getStaticProps or getStaticPaths for dynamically generate the path of the data. 
+If we want to genderate dynamic static side. We have to use getStaticProps and getStaticPaths
 
+#### Example of getStaticPaths
 
+```
+  export const getStaticPaths = async () => 
+{
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`); 
+    const article = await res.json(); 
+
+    const ids = article.map((article) => article.id)
+    const paths = ids.map(id => ({params : {id : id.toString()}}))
+
+    return {
+       // paths: {params : {id : '1', id : '2'}}
+        // here we can set like this 
+        paths,
+        fallback : false // when it won't found it will show false
+    }
+}
+```
 
 
