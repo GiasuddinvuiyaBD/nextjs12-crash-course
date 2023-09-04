@@ -145,5 +145,10 @@ In articale we have taken data from index then we looped it. Ater that we passed
 If we want to create a route with id 
 Example : articale/[id] index.js // this index.js file will be inside of the id folder.
 
+## getServerSideProps
+getStaticProps fetch the data build time at build time but getServerSideProps fetch the data at the time of request. getServerSideProps and getStaticProps resive a context. 
+
+
+
 
 
