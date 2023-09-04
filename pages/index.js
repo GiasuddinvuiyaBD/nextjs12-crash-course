@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Artical from "../components/Articale"
+import { server } from "../config";
 
 export default function Home({articals}) {
   return (
@@ -15,8 +16,9 @@ export default function Home({articals}) {
 }
 
 // we will fetch data below of the main page. 
+
 export  const getStaticProps = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+  const res = await fetch(`${server}/api/articles`)
   const articals = await res.json();
 
   return{
@@ -25,5 +27,3 @@ export  const getStaticProps = async () => {
     }
   }
 }
-
-

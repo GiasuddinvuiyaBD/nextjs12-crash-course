@@ -205,3 +205,6 @@ for now i will make a data file call data.js inside of the i will fetch data fro
       res.status(200).json(articles)
   }
 ```
+
+## useing the api data 
+We showed the data.js text to ui

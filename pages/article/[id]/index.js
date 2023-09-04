@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import articaleStyle from '../../../styles/Aritcale.module.css';
+import { server } from "../../../config";
 
 function article({article})
 {
@@ -23,7 +24,7 @@ function article({article})
 // Now i will fetch data by using getServerSideProps
 export const getStaticProps = async (context) =>
 {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`);
+    const res = await fetch(`${server}/api/articles/${context.params.id}`);
     const article = await res.json();
     
    return{
@@ -35,7 +36,7 @@ export const getStaticProps = async (context) =>
 
 export const getStaticPaths = async () => 
 {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`); 
+    const res = await fetch(`${server}/api/articles`); 
     const article = await res.json(); 
 
     const ids = article.map((article) => article.id)
