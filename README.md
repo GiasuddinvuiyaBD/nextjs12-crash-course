@@ -173,3 +173,19 @@ If we want to genderate dynamic static side. We have to use getStaticProps and g
 ```
 
 
+## Export a static Web Side. 
+
+Using third pary api. We can generate a static side. 
+1. "next buil". is build for production.
+2. "next buil && next export". is build for production.
+
+or 
+
+we can install serve package
+`
+ sudo npm install -g serve
+
+ // runing
+ serve -s out -p 8000
+`
+
