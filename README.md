@@ -189,3 +189,19 @@ we can install serve package
  serve -s out -p 8000
 `
 
+
+## API Routes
+
+Inide the api file we will work with our api. 
+for now i will make a data file call data.js inside of the i will fetch data from api folder. 
+
+
+### Example of the code 
+```
+  // this data come form anywere 
+  import { articles } from "../../data";
+  export default function handler(req, res)
+  {
+      res.status(200).json(articles)
+  }
+```
